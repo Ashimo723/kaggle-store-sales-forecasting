@@ -58,6 +58,9 @@ blend = W["base"]*base + W["fam"]*fam + W["fg"]*fg + W["gs"]*gs
 sub = te[["id"]].copy(); sub["sales"] = np.expm1(np.clip(blend, 0, None))
 refcsv = pd.read_csv(c.DATA / "test.csv")
 c.make_submission(refcsv, sub.sort_values("id").set_index("id").loc[refcsv.id, "sales"].values, "e44_blend4")
-prev = pd.read_csv(c.OUTPUT / "e38_famblend.csv"); cur = pd.read_csv(c.OUTPUT / "e44_blend4.csv")
-d = np.log1p(cur.sales.values) - np.log1p(prev.sales.values)
-print(f"  vs e38(LB 0.41889): log1p RMS {np.sqrt((d**2).mean()):.4f}  平均 {d.mean():+.4f}  |差|>0.1 の行 {100*(np.abs(d)>0.1).mean():.1f}%")
+# 前回提出との差分（存在する場合のみ。クローン直後は無いのでスキップされる）
+prev_path = c.OUTPUT / "e38_famblend.csv"
+if prev_path.exists():
+    prev = pd.read_csv(prev_path); cur = pd.read_csv(c.OUTPUT / "e44_blend4.csv")
+    d = np.log1p(cur.sales.values) - np.log1p(prev.sales.values)
+    print(f"  vs e38(LB 0.41889): log1p RMS {np.sqrt((d**2).mean()):.4f}  平均 {d.mean():+.4f}  |差|>0.1 の行 {100*(np.abs(d)>0.1).mean():.1f}%")

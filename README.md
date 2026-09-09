@@ -71,6 +71,7 @@
 ## リポジトリ構成
 
 ```
+submit.py         最終構成で提出ファイルを作る（これ1本で完結）
 src/
   common.py       RMSLE / fold 生成 / 提出書き出し（行数・id順序・NaN・負値を検算）
   features.py     56特徴の生成（ホライズン整合 lag>=16 を担保）
@@ -90,15 +91,30 @@ REPORT.html       探索レポート
 ## 再現方法
 
 ```bash
-pip install numpy pandas scikit-learn lightgbm xgboost pyarrow
-kaggle competitions download -c store-sales-time-series-forecasting -p data && unzip -o 'data/*.zip' -d data
+pip install numpy pandas scikit-learn lightgbm pyarrow
 
-cd src
-python3 features.py            # 特徴パネルを生成（output/panel.parquet）
-python3 e44_final_submission.py  # 最終構成で提出ファイルを作る
+kaggle competitions download -c store-sales-time-series-forecasting -p data
+unzip -o 'data/*.zip' -d data
+
+python3 submit.py --smoke   # 動作確認（seed 1本 / iter 100、約1.5分）
+python3 submit.py           # 本番（約35分）→ output/submission.csv
 ```
 
-各実験は `python3 e<NN>_*.py` で単体実行できる。実験間の依存は
+`submit.py` はデータ読み込みから特徴生成・4脚の学習・ブレンド・提出ファイルの検算まで
+**1本で完結する**。出力される CSV がそのまま LB 0.41533 の構成にあたる。
+
+```
+[1/3] 特徴量を生成（初回は約1分、2回目以降は output/panel.parquet を再利用）
+      学習 1,703,592 行 / 予測 28,512 行 / 特徴 56 個
+[2/3] 4本の脚を学習（seed 3本 x iter 900）
+      base → family(33) → famgrp(4) → gseas(5)
+[3/3] ブレンドして書き出す
+      base    平均   440.11  相関(base) 1.0000
+      family  平均   442.27  相関(base) 0.9979
+      ...
+```
+
+各実験を個別に再現する場合は `python3 src/e<NN>_*.py`。実験間の依存は
 `output/e39_pred_*.npz` などの予測キャッシュを介しており、
 ブレンド比率の再探索（`e41`, `e43`）は再学習なしで走る。
 
