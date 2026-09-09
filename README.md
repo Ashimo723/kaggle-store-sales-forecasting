@@ -5,7 +5,8 @@
 
 **Public LB 0.41533 / 114位 · 647チーム（上位17.6%）** — 開始時 0.42567（142位）から −0.0103。
 
-📊 **[探索レポート（HTML）](REPORT.html)** — 48実験の全記録、検証設計、棄却された軸
+📊 **[探索レポートを見る](https://ashimo723.github.io/kaggle-store-sales-forecasting/)** — 48実験の全記録、検証設計、棄却された軸
+（ソース: [REPORT.html](REPORT.html) — GitHub 上では生の HTML が表示されるため、上のリンクを推奨）
 
 ---
 
