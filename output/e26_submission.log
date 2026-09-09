@@ -1,0 +1,11 @@
+学習 2,191,860 行 / 予測 28,512 行
+  seed 42 done 37s
+  seed 1 done 37s
+  seed 2 done 37s
+  seed 3 done 37s
+  seed 4 done 37s
+wrote /Users/hiromuashida/Desktop/Codex/kaggle/store-sales/output/e26_best.csv  mean=447.159 zero_ratio=0.003
+提出コマンド（要ユーザー承認）:
+  kaggle competitions submit -c store-sales-time-series-forecasting -f /Users/hiromuashida/Desktop/Codex/kaggle/store-sales/output/e26_best.csv -m "e26 lgbm hl365 5seed CV0.3823"
+
+前回提出(e02, LB 0.42567)との差: log1p 空間 RMS 0.0935  平均 -0.0013  |差|>0.1 の行 6.2%

@@ -1,0 +1,46 @@
+fold0 2017-07-31..2017-08-15  RMSLE 0.3855  best_iter 1700  n_tr 1,675,080  58s
+fold1 2017-07-15..2017-07-30  RMSLE 0.3957  best_iter 742  n_tr 1,646,568  30s
+fold2 2017-06-29..2017-07-14  RMSLE 0.3737  best_iter 724  n_tr 1,618,056  29s
+fold3 2017-06-13..2017-06-28  RMSLE 0.3830  best_iter 916  n_tr 1,589,544  34s
+fold4 2017-05-28..2017-06-12  RMSLE 0.3902  best_iter 487  n_tr 1,561,032  22s
+
+== e02 LightGBM mean RMSLE 0.3856 (fold: [0.3855, 0.3957, 0.3737, 0.383, 0.3902]) ==
+   e01 dow4_mean          0.4540  → 差 -0.0684
+   best_iter: [1700, 742, 724, 916, 487]
+
+== family別 RMSLE 上位（誤差寄与順）==
+                             rmsle    SSE比
+family                                    
+LINGERIE                    0.6201  0.0783
+GROCERY II                  0.6015  0.0737
+CELEBRATION                 0.5398  0.0594
+SCHOOL AND OFFICE SUPPLIES  0.5344  0.0582
+HARDWARE                    0.5244  0.0560
+AUTOMOTIVE                  0.5036  0.0517
+MAGAZINES                   0.4944  0.0498
+HOME AND KITCHEN I          0.4899  0.0489
+
+== 特徴重要度 top20 (gain) ==
+rmean7             0.6099
+rmean14            0.2316
+dow4_mean          0.0456
+dow2_mean          0.0390
+rmean28            0.0105
+promo_ma7          0.0085
+is_nye             0.0073
+family             0.0063
+dayofyear          0.0034
+lag63              0.0024
+store_nbr          0.0024
+promo_store_day    0.0021
+lag16              0.0021
+lag182             0.0021
+yoy_ratio          0.0020
+lag364             0.0018
+lag28              0.0018
+promo_ma28         0.0017
+onpromotion        0.0017
+rmean365           0.0017
+wrote /Users/hiromuashida/Desktop/Codex/kaggle/store-sales/output/e02_lgbm.csv  mean=448.856 zero_ratio=0.011
+提出コマンド（要ユーザー承認）:
+  kaggle competitions submit -c store-sales-time-series-forecasting -f /Users/hiromuashida/Desktop/Codex/kaggle/store-sales/output/e02_lgbm.csv -m "e02 single lightgbm"

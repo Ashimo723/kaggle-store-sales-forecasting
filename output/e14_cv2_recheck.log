@@ -1,0 +1,35 @@
+2013-01 / 重みなし             A 0.3868  B 0.3851  平均 0.3859  (旧5fold 0.3853)
+2015-01 / 重みなし (e02)       A 0.3866  B 0.3845  平均 0.3855  (旧5fold 0.3856)
+2014-04 / 重みなし (e03)       A 0.3861  B 0.3831  平均 0.3846  (旧5fold 0.3850)
+2016-01 / 重みなし (害)         A 0.3943  B 0.3981  平均 0.3962  (旧5fold 0.3880)
+Traceback (most recent call last):
+  File "/Users/hiromuashida/Desktop/Codex/kaggle/store-sales/src/e14_cv2_recheck.py", line 35, in <module>
+    mdl = lgb.train(PARAMS, ds, num_boost_round=900)  # e08 より iter 依存は極小
+  File "/opt/anaconda3/lib/python3.13/site-packages/lightgbm/engine.py", line 297, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "/opt/anaconda3/lib/python3.13/site-packages/lightgbm/basic.py", line 3656, in __init__
+    train_set.construct()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/anaconda3/lib/python3.13/site-packages/lightgbm/basic.py", line 2590, in construct
+    self._lazy_init(
+    ~~~~~~~~~~~~~~~^
+        data=self.data,
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        position=self.position,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/lightgbm/basic.py", line 2123, in _lazy_init
+    data, feature_name, categorical_feature, self.pandas_categorical = _data_from_pandas(
+                                                                       ~~~~~~~~~~~~~~~~~^
+        data=data,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        pandas_categorical=self.pandas_categorical,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/anaconda3/lib/python3.13/site-packages/lightgbm/basic.py", line 834, in _data_from_pandas
+    raise ValueError("Input data must be 2 dimensional and non empty.")
+ValueError: Input data must be 2 dimensional and non empty.

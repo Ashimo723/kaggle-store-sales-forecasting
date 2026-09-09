@@ -1,0 +1,25 @@
+fold0 RMSLE 0.3934  best_iter 2382  103s
+fold1 RMSLE 0.3969  best_iter 942  50s
+fold2 RMSLE 0.3763  best_iter 691  40s
+fold3 RMSLE 0.3839  best_iter 1189  41s
+fold4 RMSLE 0.3899  best_iter 1452  45s
+
+== e06 残差学習 (keep_rmean7=True, start=2015-01-01) mean 0.3881 ==
+   folds [0.3934, 0.3969, 0.3763, 0.3839, 0.3899]  iters [2382, 942, 691, 1189, 1452]   e02=0.3856 比 +0.0025
+
+== 重要度 top15 ==
+family         0.1099
+is_nye         0.0838
+yoy_ratio      0.0733
+promo_ma7      0.0692
+store_nbr      0.0601
+rmean7         0.0531
+rmean28        0.0457
+dow4_mean      0.0433
+dayofyear      0.0416
+rmean112       0.0307
+onpromotion    0.0267
+dow            0.0240
+day            0.0206
+rmean365       0.0196
+oil_ma28       0.0183

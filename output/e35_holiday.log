@@ -1,0 +1,56 @@
+2016-06-01  base(56) 0.4181  +nat7 0.4205  +nat14 0.4207  +nat14+loc 0.4187  detail_only 0.4196  211s
+2016-06-17  base(56) 0.3938  +nat7 0.3955  +nat14 0.3948  +nat14+loc 0.3948  detail_only 0.3942  212s
+2016-07-03  base(56) 0.3980  +nat7 0.3986  +nat14 0.3975  +nat14+loc 0.3980  detail_only 0.3985  216s
+2016-07-19  base(56) 0.4187  +nat7 0.4161  +nat14 0.4155  +nat14+loc 0.4183  detail_only 0.4172  220s
+2016-08-04  base(56) 0.5102  +nat7 0.5091  +nat14 0.5128  +nat14+loc 0.5103  detail_only 0.5099  223s
+2016-08-20  base(56) 0.6382  +nat7 0.6248  +nat14 0.6199  +nat14+loc 0.6352  detail_only 0.6282  228s
+2016-09-05  base(56) 0.4210  +nat7 0.4202  +nat14 0.4217  +nat14+loc 0.4207  detail_only 0.4233  232s
+2016-09-21  base(56) 0.3902  +nat7 0.3904  +nat14 0.3907  +nat14+loc 0.3894  detail_only 0.3915  233s
+2016-10-07  base(56) 0.4109  +nat7 0.4102  +nat14 0.4103  +nat14+loc 0.4098  detail_only 0.4109  237s
+2016-10-23  base(56) 0.4584  +nat7 0.4600  +nat14 0.4602  +nat14+loc 0.4606  detail_only 0.4668  241s
+2016-11-08  base(56) 0.4650  +nat7 0.4628  +nat14 0.4682  +nat14+loc 0.4640  detail_only 0.4641  244s
+2016-11-24  base(56) 0.4508  +nat7 0.4505  +nat14 0.4488  +nat14+loc 0.4503  detail_only 0.4495  247s
+2016-12-10  base(56) 0.4332  +nat7 0.4336  +nat14 0.4318  +nat14+loc 0.4322  detail_only 0.4298  251s
+2016-12-26  base(56) 0.6405  +nat7 0.6343  +nat14 0.6245  +nat14+loc 0.6298  detail_only 0.6246  255s
+2017-01-11  base(56) 0.4035  +nat7 0.4027  +nat14 0.4024  +nat14+loc 0.4018  detail_only 0.4028  258s
+2017-01-27  base(56) 0.3851  +nat7 0.3847  +nat14 0.3847  +nat14+loc 0.3845  detail_only 0.3865  264s
+2017-02-12  base(56) 0.5140  +nat7 0.5141  +nat14 0.5120  +nat14+loc 0.5121  detail_only 0.5153  265s
+2017-02-28  base(56) 0.3884  +nat7 0.3884  +nat14 0.3882  +nat14+loc 0.3880  detail_only 0.3894  269s
+2017-03-16  base(56) 0.4018  +nat7 0.4024  +nat14 0.4022  +nat14+loc 0.4020  detail_only 0.4019  271s
+2017-04-01  base(56) 0.4898  +nat7 0.4884  +nat14 0.4880  +nat14+loc 0.4895  detail_only 0.4934  273s
+2017-04-17  base(56) 0.4645  +nat7 0.4656  +nat14 0.4635  +nat14+loc 0.4682  detail_only 0.4658  276s
+2017-05-03  base(56) 0.4305  +nat7 0.4291  +nat14 0.4295  +nat14+loc 0.4283  detail_only 0.4306  280s
+2017-05-19  base(56) 0.3960  +nat7 0.3966  +nat14 0.3953  +nat14+loc 0.3960  detail_only 0.3970  283s
+2017-06-04  base(56) 0.3871  +nat7 0.3870  +nat14 0.3869  +nat14+loc 0.3865  detail_only 0.3869  287s
+2017-06-20  base(56) 0.3743  +nat7 0.3750  +nat14 0.3746  +nat14+loc 0.3745  detail_only 0.3746  290s
+2017-07-06  base(56) 0.3815  +nat7 0.3807  +nat14 0.3808  +nat14+loc 0.3818  detail_only 0.3812  291s
+2017-07-22  base(56) 0.3939  +nat7 0.3942  +nat14 0.3943  +nat14+loc 0.3949  detail_only 0.3957  296s
+
+== 27 fold 平均 ==
+base(56)       0.4392
++nat7          0.4383
++nat14         0.4378
++nat14+loc     0.4385
+detail_only    0.4389
+
+== 対比較（基準 base(56)、採用は |t|>=3）==
+  +nat7          平均差 -0.0008  中央値 -0.0001  勝率  56% (15/27)  t -1.41  
+  +nat14         平均差 -0.0014  中央値 -0.0005  勝率  63% (17/27)  t -1.52  
+  +nat14+loc     平均差 -0.0006  中央値 -0.0004  勝率  67% (18/27)  t -1.37  
+  detail_only    平均差 -0.0003  中央値 +0.0003  勝率  37% (10/27)  t -0.38  
+
+== 祝日ダミーの gain 比（最終 fold, +nat14）==
+nat_carnaval                      0.00004
+nat_independencia                 0.00002
+nat_dia la madre                  0.00001
+nat_terremoto                     0.00001
+nat_viernes santo                 0.00001
+nat_dia trabajo                   0.00000
+nat_navidad                       0.00000
+nat_dia difuntos                  0.00000
+nat_batalla                       0.00000
+nat_primer dia ano                0.00000
+nat_cyber monday                  0.00000
+nat_primer grito independencia    0.00000
+nat_futbol                        0.00000
+nat_black friday                  0.00000

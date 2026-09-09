@@ -1,0 +1,41 @@
+休業行 249,018 / 1-1 行 8,910 / 全 3,036,528
+2016-06-01  base 0.4182  drop_nye 0.4180  drop_closed 0.6234  drop_both 0.6225  interp 0.7978  207s
+2016-06-17  base 0.3938  drop_nye 0.3931  drop_closed 0.6072  drop_both 0.6046  interp 0.7824  210s
+2016-07-03  base 0.3980  drop_nye 0.3953  drop_closed 0.6054  drop_both 0.6019  interp 0.7825  214s
+2016-07-19  base 0.4187  drop_nye 0.4152  drop_closed 0.6046  drop_both 0.6121  interp 0.7909  217s
+2016-08-04  base 0.5102  drop_nye 0.5078  drop_closed 0.6777  drop_both 0.6754  interp 0.8443  221s
+2016-08-20  base 0.6382  drop_nye 0.6199  drop_closed 0.9121  drop_both 0.9100  interp 1.0569  224s
+2016-09-05  base 0.4208  drop_nye 0.4152  drop_closed 0.8092  drop_both 0.8098  interp 1.0628  228s
+2016-09-21  base 0.3902  drop_nye 0.3845  drop_closed 0.8135  drop_both 0.8141  interp 1.0880  230s
+2016-10-07  base 0.4109  drop_nye 0.4102  drop_closed 0.8427  drop_both 0.8481  interp 1.1298  233s
+2016-10-23  base 0.4584  drop_nye 0.4553  drop_closed 0.7764  drop_both 0.7743  interp 1.0213  237s
+2016-11-08  base 0.4650  drop_nye 0.4598  drop_closed 0.7811  drop_both 0.7813  interp 1.0003  241s
+2016-11-24  base 0.4508  drop_nye 0.4518  drop_closed 0.7107  drop_both 0.7160  interp 0.9144  244s
+2016-12-10  base 0.4337  drop_nye 0.4317  drop_closed 0.6279  drop_both 0.6309  interp 0.8027  247s
+2016-12-26  base 0.6409  drop_nye 1.2361  drop_closed 1.3277  drop_both 1.3307  interp 1.4481  252s
+2017-01-11  base 0.4034  drop_nye 0.4017  drop_closed 0.5898  drop_both 0.5895  interp 0.7886  254s
+2017-01-27  base 0.3853  drop_nye 0.3839  drop_closed 0.5759  drop_both 0.5715  interp 0.7779  258s
+2017-02-12  base 0.5141  drop_nye 0.5134  drop_closed 0.6642  drop_both 0.6681  interp 0.8493  261s
+2017-02-28  base 0.3884  drop_nye 0.3885  drop_closed 0.5728  drop_both 0.5790  interp 0.7790  264s
+2017-03-16  base 0.4021  drop_nye 0.4024  drop_closed 0.5864  drop_both 0.5823  interp 0.7869  267s
+2017-04-01  base 0.4899  drop_nye 0.4899  drop_closed 0.6478  drop_both 0.6461  interp 0.8364  270s
+2017-04-17  base 0.4645  drop_nye 0.4679  drop_closed 0.4718  drop_both 0.4753  interp 0.4966  274s
+2017-05-03  base 0.4305  drop_nye 0.4301  drop_closed 0.4299  drop_both 0.4279  interp 0.4300  277s
+2017-05-19  base 0.3960  drop_nye 0.3950  drop_closed 0.3947  drop_both 0.3949  interp 0.3925  280s
+2017-06-04  base 0.3872  drop_nye 0.3868  drop_closed 0.3862  drop_both 0.3868  interp 0.3868  283s
+2017-06-20  base 0.3743  drop_nye 0.3745  drop_closed 0.3739  drop_both 0.3747  interp 0.3742  287s
+2017-07-06  base 0.3815  drop_nye 0.3821  drop_closed 0.3821  drop_both 0.3817  interp 0.3817  292s
+2017-07-22  base 0.3940  drop_nye 0.3949  drop_closed 0.3933  drop_both 0.3944  interp 0.3997  296s
+
+== 27 fold 平均 ==
+base           0.4392
+drop_nye       0.4594
+drop_closed    0.6366
+drop_both      0.6372
+interp         0.7852
+
+== 対比較（基準 base、採用は |t|>=3）==
+  drop_nye     平均差 +0.0202  中央値 -0.0006  勝率  67% (18/27)  t +0.91  
+  drop_closed  平均差 +0.1974  中央値 +0.1864  勝率  19% (5/27)  t +6.26  
+  drop_both    平均差 +0.1980  中央値 +0.1906  勝率  11% (3/27)  t +6.26  
+  interp       平均差 +0.3460  中央値 +0.3845  勝率  15% (4/27)  t +7.50  

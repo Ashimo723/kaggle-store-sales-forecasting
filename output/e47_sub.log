@@ -1,0 +1,9 @@
+再帰モデル学習 done 103s
+再帰予測 done 105s  行数 28512
+base done 200s
+family done 1390s
+famgrp done 1599s
+gseas done 1840s
+再帰が付かなかった行: 0
+wrote /Users/hiromuashida/Desktop/Codex/kaggle/store-sales/output/e47_blend5.csv  mean=445.780 zero_ratio=0.000
+  vs e44(LB 0.41533): log1p RMS 0.0416  平均 +0.0045  |差|>0.1 の行 2.1%

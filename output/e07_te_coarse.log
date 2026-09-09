@@ -1,0 +1,32 @@
+fold0 RMSLE 0.3827  best_iter 1543  73s
+fold1 RMSLE 0.4005  best_iter 107  15s
+fold2 RMSLE 0.3781  best_iter 354  27s
+fold3 RMSLE 0.3823  best_iter 592  35s
+fold4 RMSLE 0.3882  best_iter 996  49s
+
+== e07 TE(coarse keys) (start=2015-01-01, level_days=365, m=200) mean 0.3864 ==
+   folds [0.3827, 0.4005, 0.3781, 0.3823, 0.3882]  iters [1543, 107, 354, 592, 996]
+
+== 重要度 top20 (gain 比) ==
+rmean7             0.6696
+rmean14            0.1057
+dow4_mean          0.1017
+dow2_mean          0.0385
+rmean28            0.0173
+te_level           0.0094
+promo_ma7          0.0076
+is_nye             0.0059
+family             0.0038
+promo_store_day    0.0028
+dayofyear          0.0026
+lag63              0.0022
+store_nbr          0.0022
+promo_ma28         0.0019
+te_f_month         0.0017
+lag49              0.0016
+te_f_promo         0.0016
+lag16              0.0016
+lag21              0.0016
+lag364             0.0015
+
+== TE 列の合計 gain 比: 0.0148 ==

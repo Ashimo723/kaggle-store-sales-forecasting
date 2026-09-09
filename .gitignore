@@ -1,0 +1,14 @@
+# コンペデータ（Kaggle から取得する）
+data/
+
+# 中間生成物・大容量ファイル
+output/*.parquet
+output/*.npz
+output/*.csv
+src/catboost_info/
+__pycache__/
+*.pyc
+
+# 他者のノートブック（著作権のため公開しない）
+intel/
+output/*.npy

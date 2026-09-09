@@ -1,0 +1,11 @@
+学習 1,703,592 行 / 予測 28,512 行
+  base seed 42 32s
+  base seed 1 32s
+  base seed 2 32s
+  family 1/33 done
+  family 9/33 done
+  family 17/33 done
+  family 25/33 done
+  family 33/33 done
+wrote /Users/hiromuashida/Desktop/Codex/kaggle/store-sales/output/e38_famblend.csv  mean=446.637 zero_ratio=0.001
+  vs e29(LB 0.42468): log1p RMS 0.0461  平均 -0.0054  |差|>0.1 の行 3.3%

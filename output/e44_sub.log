@@ -1,0 +1,7 @@
+fg 群: 4  gs 群: 5
+base done 95s
+family別 done 1268s
+famgrp done 1475s
+gseas done 1715s
+wrote /Users/hiromuashida/Desktop/Codex/kaggle/store-sales/output/e44_blend4.csv  mean=446.350 zero_ratio=0.000
+  vs e38(LB 0.41889): log1p RMS 0.0349  平均 -0.0019  |差|>0.1 の行 2.1%

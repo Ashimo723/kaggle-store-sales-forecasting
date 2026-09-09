@@ -1,0 +1,5 @@
+A:2017-08前半  Ridge脚 単体 RMSLE 0.6202  2s
+B:2016-08後半  Ridge脚 単体 RMSLE 0.6961  1s
+
+参考: LightGBM 単体は fold A 0.3841 / fold B 0.3815（新CV 平均 0.3828）
+次: e18 で LightGBM 予測とブレンドし、誤差相関と最適重みを測る
